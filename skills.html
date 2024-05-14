@@ -40,19 +40,24 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
-        .skills-item, .coursework-item {
+        .skills-item {
             background: #f9f9f9;
-            padding: 15px;
+            padding: 20px;
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-            margin-bottom: 20px; /* Added bottom margin for better spacing */
+            transition: transform 0.2s;
         }
-        .coursework-list {
-            padding-left: 0;
-            list-style: none;
+        .skills-item:hover {
+            transform: translateY(-5px);
         }
         h2 {
             margin-top: 0;
+        }
+        .skills-heading {
+            text-align: center;
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 20px;
         }
     </style>
     <title>Arati Ganesh</title>
@@ -68,45 +73,26 @@
         <article class="page" itemscope itemtype="http://arati-ganesh.github.io" style="padding-right: 4%; padding-left: 2%;">
             <!-- Skills Section -->
             <section class="page__content" itemprop="text">
-                <h2 style="font-size: x-large;"><b>Technical Skills</b></h2>
+                <h2 class="skills-heading"><b>Technical Skills</b></h2>
                 <div class="skills-grid">
                     <div class="skills-item">
-                        <strong>Languages:</strong> Python, C, C++, CUDA, Java, OpenMP, OpenMPI, OpenGL, Shell Scripting, MATLAB
+                        <strong>Languages:</strong>
+                        <p>Python, C, C++, CUDA, Java, OpenMP, OpenMPI, OpenGL, Shell Scripting, MATLAB</p>
                     </div>
                     <div class="skills-item">
-                        <strong>Frameworks/Tools:</strong> PyTorch, TensorFlow, Scikit-Learn, Numpy, Matplotlib, ROS, AWS Cloud, Docker, Mlflow, Git
+                        <strong>Frameworks/Tools:</strong>
+                        <p>PyTorch, TensorFlow, Scikit-Learn, Numpy, Matplotlib, ROS, AWS Cloud, Docker, Mlflow, Git</p>
                     </div>
                     <div class="skills-item">
-                        <strong>Hardware:</strong> STM32, i.MX8, Raspberry Pi, IMX500, ADUCM355, Arduino
+                        <strong>Hardware:</strong>
+                        <p>STM32, i.MX8, Raspberry Pi, IMX500, ADUCM355, Arduino</p>
                     </div>
                     <div class="skills-item">
-                        <strong>Publications:</strong> Mobile Covid Sanitization Robot <a href="https://ieeexplore.ieee.org/document/9588769">[Link]</a>
+                        <strong>Publications:</strong>
+                        <p>Mobile Covid Sanitization Robot <a href="https://ieeexplore.ieee.org/document/9588769">[Link]</a></p>
                     </div>
                 </div>
             </section>
-            <!-- Coursework Section -->
-            <section class="page__content" itemprop="text">
-                <h2 style="font-size: x-large;"><b>Coursework</b></h2>
-                <ul class="coursework-list">
-                    <li>Advanced Programming Techniques</li>
-                    <li>Generative and Geometric Deep Learning</li>
-                    <li>Random Processes</li>
-                    <li>Machine Learning</li>
-                    <li>Hardware and Software Codesign for ML</li>
-                    <li>Deep Learning</li>
-                </ul>
-            </section>
-            <!-- Teaching Experience Section -->
-            <section class="page__content" itemprop="text">
-                <h2 style="font-size: x-large;"><b>Teaching Experience</b></h2>
-                <div>
-                    <strong>Graduate Teaching Assistant - OMSCS 7643 Deep Learning</strong> (Aug 2023 - Present)
-                    <ul>
-                        <li>Assisting students with concepts, grading, and providing feedback on assignments.</li>
-                    </ul>
-                </div>
-            </section>
-            <footer class="page__meta"><br></footer>
         </article>
     </div>
     <div id="footer">
