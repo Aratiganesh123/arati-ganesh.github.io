@@ -59,6 +59,20 @@
             font-size: 1.5em;
             margin-bottom: 20px;
         }
+        .skill-logo {
+            width: 24px;
+            height: 24px;
+            margin-right: 8px;
+        }
+        .skill-list {
+            list-style: none;
+            padding: 0;
+        }
+        .skill-list li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+        }
     </style>
     <title>Arati Ganesh</title>
 </head>
@@ -77,19 +91,35 @@
                 <div class="skills-grid">
                     <div class="skills-item">
                         <strong>Languages:</strong>
-                        <p>Python, C, C++, CUDA, Java, OpenMP, OpenMPI, OpenGL, Shell Scripting, MATLAB</p>
+                        <ul class="skill-list">
+                            <li><img src="images/logos/python.png" class="skill-logo" alt="Python">Python</li>
+                            <li><img src="images/logos/cpp.png" class="skill-logo" alt="C++">C++</li>
+                            <li><img src="images/logos/cuda.png" class="skill-logo" alt="CUDA">CUDA</li>
+                            <li><img src="images/logos/java.png" class="skill-logo" alt="Java">Java</li>
+                        </ul>
                     </div>
                     <div class="skills-item">
                         <strong>Frameworks/Tools:</strong>
-                        <p>PyTorch, TensorFlow, Scikit-Learn, Numpy, Matplotlib, ROS, AWS Cloud, Docker, Mlflow, Git</p>
+                        <ul class="skill-list">
+                            <li><img src="images/logos/pytorch.png" class="skill-logo" alt="PyTorch">PyTorch</li>
+                            <li><img src="images/logos/tensorflow.png" class="skill-logo" alt="TensorFlow">TensorFlow</li>
+                            <li><img src="images/logos/scikit.png" class="skill-logo" alt="Scikit-Learn">Scikit-Learn</li>
+                            <li><img src="images/logos/aws.png" class="skill-logo" alt="AWS Cloud">AWS Cloud</li>
+                        </ul>
                     </div>
                     <div class="skills-item">
                         <strong>Hardware:</strong>
-                        <p>STM32, i.MX8, Raspberry Pi, IMX500, ADUCM355, Arduino</p>
+                        <ul class="skill-list">
+                            <li><img src="images/logos/stm32.png" class="skill-logo" alt="STM32">STM32</li>
+                            <li><img src="images/logos/raspberrypi.png" class="skill-logo" alt="Raspberry Pi">Raspberry Pi</li>
+                            <li><img src="images/logos/arduino.png" class="skill-logo" alt="Arduino">Arduino</li>
+                        </ul>
                     </div>
                     <div class="skills-item">
                         <strong>Publications:</strong>
-                        <p>Mobile Covid Sanitization Robot <a href="https://ieeexplore.ieee.org/document/9588769">[Link]</a></p>
+                        <ul class="skill-list">
+                            <li>Mobile Covid Sanitization Robot <a href="https://ieeexplore.ieee.org/document/9588769">[Link]</a></li>
+                        </ul>
                     </div>
                 </div>
             </section>
