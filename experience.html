@@ -28,15 +28,35 @@
     <link rel="stylesheet" href="assets/css/main.bundle.css">
     <title>Arati Ganesh | Projects</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        .archive {
+            padding-top: 20px;
+        }
         .card-content {
+            background-color: #fff;
             padding: 20px;
             border: 1px solid #ddd;
             border-radius: 8px;
             margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .card-content:hover {
+            transform: translateY(-10px);
         }
         .media-left img {
             width: 100px; /* Increased size for logo */
             height: auto;
+            border-radius: 8px;
         }
         .media {
             display: flex;
@@ -49,13 +69,15 @@
         .media-content h3 {
             margin: 0;
             font-weight: bold;
+            color: #0056b3;
         }
         .media-content p {
             margin: 5px 0;
         }
         .content ul {
-            list-style-type: none;
-            padding-left: 0;
+            list-style-type: disc;
+            margin: 10px 0;
+            padding-left: 20px;
         }
         .content ul li {
             margin-bottom: 10px;
@@ -69,6 +91,12 @@
             padding: 4px 8px;
             margin-right: 4px;
             border-radius: 4px;
+        }
+        .tags .tag {
+            background-color: #e0e0e0;
+            border-radius: 4px;
+            padding: 5px 10px;
+            font-size: 0.9em;
         }
     </style>
     <script type="application/ld+json">
@@ -100,7 +128,7 @@
 </head>
 <body>
 <div id="header"></div>
-<div id="main" role="main" style="margin-bottom: 50px;">
+<div id="main" role="main" class="container" style="margin-bottom: 50px;">
     <div id="sidebar"></div>
     <div class="archive">
         <h2 style="font-size: x-large;"><b>Professional Experience</b></h2>
